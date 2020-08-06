@@ -1,0 +1,52 @@
+---
+title: "Terrible"
+output: 
+  learnr::tutorial:
+    css: css/custom.css
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+library(palmerpenguins)
+library(tidyverse)
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+## Code exercises
+
+### Exercise 
+
+Create a ggplot2 graph of penguin mass vs. flipper length. 
+```{r penguin-plot, exercise=TRUE}
+
+```
+
+```{r penguin-plot-hint-1}
+ggplot(data = penguins, aes(x = _______, y = _______)) + 
+  geom_point()
+```
+
+```{r penguin-plot-hint-2}
+ggplot(data = penguins, aes(x = body_mass_g, y = _______)) + 
+  geom_point()
+```
+
+```{r penguin-plot-solution}
+ggplot(data = penguins, aes(x = body_mass_g, y = flipper_length_mm)) + 
+  geom_point()
+```
+
+## Questions
+
+### Creating a multiple choice question
+
+```{r q1}
+question("What is the best animal?",
+         answer("Pika", message = "So close."),
+         answer("Shark", message = "Also very cool."),
+         answer("Lobster", message = "You did it!", correct = TRUE),
+         allow_retry = TRUE
+)
+```

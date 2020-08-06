@@ -1,0 +1,42 @@
+/***** Some places to start updating your custom css *****/
+
+/* Import google fonts here */
+
+
+
+/* Body */
+
+body {
+  background-color: pink;
+}
+
+
+/* Headers */
+
+h2 {
+  color: green;
+  font-size: 4em;
+}
+
+h3 {
+  color: purple;
+  font-size: 2.5em;
+}
+
+h4 {
+  color: orange;
+  font-size: 2em;
+}
+
+/* Left menu topics list */
+
+.topicsList .topic {
+  background-color: skyblue;
+  color: blue;
+}
+
+.topicsList .topic.current {
+  background-color: yellow;
+  color: red;
+}
+
